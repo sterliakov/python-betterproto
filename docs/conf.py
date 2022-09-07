@@ -15,9 +15,9 @@ import toml
 
 # -- Project information -----------------------------------------------------
 
-project = "betterproto"
+project = "alt-betterproto"
 copyright = "2019 Daniel G. Taylor"
-author = "danielgtaylor"
+author = "sterliakov"
 pyproject = toml.load(open(pathlib.Path(__file__).parent.parent / "pyproject.toml"))
 
 
@@ -40,7 +40,7 @@ autodoc_member_order = "bysource"
 autodoc_typehints = "none"
 
 extlinks = {
-    "issue": ("https://github.com/danielgtaylor/python-betterproto/issues/%s", "GH-"),
+    "issue": ("https://github.com/sterliakov/python-betterproto/issues/%s", "GH-"),
 }
 
 # Links used for cross-referencing stuff in other documentation

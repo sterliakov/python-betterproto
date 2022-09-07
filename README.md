@@ -1,6 +1,21 @@
+# This is a fork of https://github.com/danielgtaylor/python-betterproto with minor modifications
+
+All credits should go to the original author and not to me!
+
+I need this implementation urgently, and cannot wat for upstream release to include in my own package. Please do not consider using this package unless you know for sure what you are doing. 
+This package is most probably not going to be maintained.
+
+This was developed as helper utility for [python evmos SDK](https://github.comsterliakov/pyevmos/).
+
+The only changes are:
+
+* Upstream fixes (including critical - for me - one resulting in binary incompatibility with reference implementation) since 2.0.0b5;
+* Docstring handling: this version uses 88 (black) line length as default and does respect long words and urls (does not wrap them), plus preserves original newlines when possible (wraps lines longer that 88 chars, but all original newlines remain in place).
+
+
 # Better Protobuf / gRPC Support for Python
 
-![](https://github.com/danielgtaylor/python-betterproto/workflows/CI/badge.svg)
+![](https://github.com/sterliakov/python-betterproto/workflows/CI/badge.svg)
 > :octocat: If you're reading this on github, please be aware that it might mention unreleased features! See the latest released README on [pypi](https://pypi.org/project/betterproto/).
 
 This project aims to provide an improved experience when using Protobuf / gRPC in a modern Python environment by making use of modern language features and generating readable, understandable, idiomatic Python code. It will not support legacy features or environments (e.g. Protobuf 2). The following are supported:

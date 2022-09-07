@@ -161,7 +161,7 @@ def get_comment(
                 w
                 for e in sci_loc.leading_comments.strip().split("\n")
                 for w in textwrap.wrap(
-                    e.removeprefix(" "),
+                    e[1:] if e.startswith(" ") else e,
                     width=88 - indent,
                     break_long_words=False,
                     break_on_hyphens=False,
