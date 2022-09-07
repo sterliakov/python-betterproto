@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "alt-betterproto"
-version = "2.0.0"
+version = "2.0.1"
 description = "A CLONE of better Protobuf / gRPC generator & library"
 authors = ["sterliakov <terlya.stas@gmail.com>"]
 readme = "README.md"
